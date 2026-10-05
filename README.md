@@ -42,8 +42,8 @@ The `Main` class demonstrates configuration through the Mediator, document const
 
 ## UML
 
-The `diagrama.puml` file contains the complete class diagram. It can be opened with PlantUML or another compatible UML viewer.
-![Diagrama de Clases UML](actividad.png)
+The `diagrama.png` file contains the complete class diagram. It can be opened with PlantUML or another compatible UML viewer.
+![Diagrama de Clases UML](diagrama.png)
 ## Test Result
 
 The project was compiled with JDK and executed successfully. The final console message is:
