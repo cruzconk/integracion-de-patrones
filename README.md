@@ -1,4 +1,4 @@
-![Diagrama de Clases UML](actividad_2.png)
+
 # Smart Document Engine - Pattern Integration
 
 Academic project based on the **Pattern Integration** activity. It implements the six required Java design patterns inside a simple smart document engine.
@@ -43,7 +43,7 @@ The `Main` class demonstrates configuration through the Mediator, document const
 ## UML
 
 The `diagrama.puml` file contains the complete class diagram. It can be opened with PlantUML or another compatible UML viewer.
-
+![Diagrama de Clases UML](actividad.png)
 ## Test Result
 
 The project was compiled with JDK and executed successfully. The final console message is:
