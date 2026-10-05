@@ -1,33 +1,3 @@
-@startuml
-skinparam classAttributeIconSize 0
-package Model { class Document; class PagedDocument }
-package Flyweight { class CharacterFlyweight; class FlyweightFactory }
-package Builder { abstract class DocumentBuilder; class ExecutiveReportBuilder; class SimpleInvoiceBuilder }
-package Bridge { interface RenderEngine; class PdfRenderEngine; class HtmlRenderEngine; class MarkdownRenderEngine }
-package Chain { abstract class ProcessorHandler; class SyntaxValidator; class Sanitizer; class ExpressionEvaluator }
-package Interpreter { interface Expression; class TerminalExpression; class NonTerminalExpression; class ExpressionParser }
-package Mediator { class DocumentEditorMediator; class FormatSelector; class ToolbarBuilder; class Preview; class ExportButton }
-DocumentBuilder <|-- ExecutiveReportBuilder
-DocumentBuilder <|-- SimpleInvoiceBuilder
-PagedDocument o-- Document
-PagedDocument o-- RenderEngine
-RenderEngine <|.. PdfRenderEngine
-RenderEngine <|.. HtmlRenderEngine
-RenderEngine <|.. MarkdownRenderEngine
-FlyweightFactory o-- CharacterFlyweight
-ProcessorHandler --> ProcessorHandler
-ProcessorHandler <|-- SyntaxValidator
-ProcessorHandler <|-- Sanitizer
-ProcessorHandler <|-- ExpressionEvaluator
-Expression <|.. TerminalExpression
-Expression <|.. NonTerminalExpression
-NonTerminalExpression o-- Expression
-ExpressionEvaluator --> ExpressionParser
-DocumentEditorMediator --> FormatSelector
-DocumentEditorMediator --> ToolbarBuilder
-DocumentEditorMediator --> Preview
-DocumentEditorMediator --> ExportButton
-DocumentEditorMediator --> DocumentBuilder
-FormatSelector --> RenderEngine
-DocumentBuilder --> Document
-@enduml
+# Proyecto Integración de Patrones de Diseño
+
+![Diagrama de Clases UML](diagrama.png)
