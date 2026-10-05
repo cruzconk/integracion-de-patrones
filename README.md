@@ -1,3 +1,4 @@
+![Diagrama de Clases UML](actividad_2.png)
 # Smart Document Engine - Pattern Integration
 
 Academic project based on the **Pattern Integration** activity. It implements the six required Java design patterns inside a simple smart document engine.
